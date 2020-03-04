@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Results";
+}
+
+@model SWPeople
+<h1>@ViewBag.Message</h1>
+
+<div class="table-bordered table">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Height</th>
+            <th>Mass</th>
+            <th>Hair Color</th>
+            <th>Skin Color</th>
+            <th>Eye Color</th>
+            <th>Year Born</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>@Model.name</td>
+            <td>@Model.height</td>
+            <td>@Model.mass</td>
+            <td>@Model.hair_color</td>
+            <td>@Model.skin_color</td>
+            <td>@Model.eye_color</td>
+            <td>@Model.birth_year</td>
+            <td>@Model.gender</td>
+        </tr>
+    </table>
+</div>
+

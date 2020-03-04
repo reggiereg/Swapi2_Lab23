@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lookup Star Wars Locations or Characters </h1>
+
+<h2>LookUp Star Wars Characters:</h2><br />
+<form action="../SW/DisplayById" method="post">
+    <input type="hidden" name="lookUp" value="people" />
+    Enter in an id: <input type="number" name="id" /><br />
+    <input type="submit" value="Lookup Character" />
+</form><br /><br />
+
+<h2>LookUp Star Wars Planets</h2><br />
+<form action="../SW/DisplayById" method="post">
+    <input type="hidden" name="lookUp" value="planets" />
+    Enter in an id: <input type="number" name="id" /><br />
+    <input type="submit" value="Lookup Planet" />
+</form>
